@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>三级联动</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        height: 100%;
+        background-color: #add8e6;
+      }
+      .container {
+        width: 300px;
+        margin: 50px auto;
+      }
+      .item {
+        background-color: #fff;
+        border-radius: 8px;
+        height: 30px;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      .item select {
+        border: transparent;
+        width: 70%;
+      }
+      .item .title {
+        color: #008c8c;
+      }
+      .item .icon {
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="container">
+      <div class="item">
+        <span class="title">省会</span>
+        <span class="icon">|</span>
+        <select name="province" id="province">
+          <option value="00" selected>请选择</option>
+        </select>
+      </div>
+      <div class="item">
+        <span class="title">城市</span>
+        <span class="icon">|</span>
+        <select name="city" id="city">
+          <option value="00" selected>请选择</option>
+        </select>
+      </div>
+      <div class="item">
+        <span class="title">学校</span>
+        <span class="icon">|</span>
+        <select name="university" id="university">
+          <option value="00" selected>请选择</option>
+        </select>
+      </div>
+    </form>
+
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

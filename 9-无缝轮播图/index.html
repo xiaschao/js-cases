@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>轮播图</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .carousel-container {
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+        margin: 30px auto;
+        position: relative;
+      }
+
+      .carousel-container .carousel-list {
+        height: 100%;
+        display: flex;
+        margin-left: 0;
+      }
+
+      .carousel-container .carousel-list li img {
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .carousel-container .indicator {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+      }
+
+      .carousel-container .indicator li {
+        width: 22px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 0 5px 0 5px;
+        cursor: pointer;
+      }
+      .carousel-container .arrow-left,
+      .carousel-container .arrow-right {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 35px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .carousel-container .arrow-left {
+        left: 0;
+      }
+
+      .carousel-container .arrow-right {
+        right: 0;
+      }
+
+      .carousel-container .arrow-left:hover,
+      .carousel-container .arrow-right:hover {
+        opacity: 1;
+      }
+
+      .carousel-container .arrow-left::after {
+        content: '<';
+        color: #ffffff;
+        font-size: 33px;
+      }
+
+      .carousel-container .arrow-right::after {
+        content: '>';
+        color: #ffffff;
+        font-size: 33px;
+      }
+
+      .carousel-container .indicator .active {
+        background-color: #e99c3d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel-container">
+      <ul class="carousel-list"></ul>
+      <ul class="indicator"></ul>
+      <div class="arrow-left"></div>
+      <div class="arrow-right"></div>
+    </div>
+
+    <script src="./js/animation.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

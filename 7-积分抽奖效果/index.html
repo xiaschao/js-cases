@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <!-- 抽奖区域 -->
+        <ul class="lottery">
+          <li index="1">
+            <img src="./img/prize_1.png" alt="" />
+            <span>IphoneX</span>
+          </li>
+          <li index="2">
+            <img src="./img/prize_2.png" alt="" />
+            <span>现金50元</span>
+          </li>
+          <li index="3">
+            <img src="./img/prize_3.png" alt="" />
+            <span>HUAWEI</span>
+          </li>
+          <li class="list-center" index="8">
+            <img src="./img/prize_8.png" alt="" />
+            <span>U盘</span>
+          </li>
+          <li id="start-area">
+            <img src="./img/center_1.png" alt="" />
+            <span>还可以抽奖 <span id="lottery-times"></span> 次</span>
+            <button></button>
+          </li>
+          <li class="list-center" index="4">
+            <img src="./img/prize_4.png" alt="" />
+            <span>现金10元</span>
+          </li>
+          <li index="7">
+            <img src="./img/prize_7.png" alt="" />
+            <span>电脑优惠券</span>
+          </li>
+          <li index="6">
+            <img src="./img/prize_6.png" alt="" />
+            <span>手机优惠券</span>
+          </li>
+          <li index="5">
+            <img src="./img/prize_5.png" alt="" />
+            <span>谢谢参与</span>
+          </li>
+        </ul>
+      </div>
+      <!-- 遮罩层 -->
+      <div class="mask">
+        <div class="tip">
+          <div class="tip-title">
+            <span>温馨提示</span>
+            <span id="cha">&times;</span>
+          </div>
+          <div class="tip-content">
+            <p></p>
+            <button>再来一次</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

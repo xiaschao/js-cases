@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>五子棋</title>
+    <style>
+      #container {
+        border: 1px solid rgb(207, 188, 188);
+        width: 500px;
+        height: 500px;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f7e6b7;
+      }
+      #container .checkerboard {
+        width: 92%;
+        height: 92%;
+        border-collapse: collapse;
+      }
+      tbody td {
+        border: 1px black solid;
+        position: relative;
+      }
+      .piece {
+        border-radius: 50%;
+        position: absolute;
+        border: 1px lightgrey solid;
+        width: 90%;
+        height: 90%;
+        color: lightgrey;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .piece[player='black'] {
+        background-color: black;
+      }
+      .piece[player='white'] {
+        background-color: #fff;
+      }
+      .win {
+        border: 1px solid red;
+        box-shadow: 0 0 3px 2px red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

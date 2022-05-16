@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手风琴</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style-type: none;
+      }
+      .menu {
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .fir-menu {
+        margin-top: 20px;
+        background-color: #add8e6;
+      }
+      .fir-menu h4 {
+        font-weight: normal;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+      }
+      .sec-menu {
+        height: 0;
+        background-color: #b4eafc;
+        overflow: hidden;
+      }
+      .sec-menu li {
+        height: 40px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="menu">
+        <li class="fir-menu">
+          <h4 class="title">菜单一</h4>
+          <ul class="sec-menu">
+            <li>菜单1</li>
+            <li>菜单2</li>
+            <li>菜单3</li>
+            <li>菜单4</li>
+          </ul>
+        </li>
+        <li class="fir-menu">
+          <h4 class="title">菜单二</h4>
+          <ul class="sec-menu">
+            <li>菜单1</li>
+            <li>菜单2</li>
+            <li>菜单3</li>
+            <li>菜单4</li>
+          </ul>
+        </li>
+        <li class="fir-menu">
+          <h4 class="title">菜单三</h4>
+          <ul class="sec-menu">
+            <li>菜单1</li>
+            <li>菜单2</li>
+            <li>菜单3</li>
+            <li>菜单4</li>
+          </ul>
+        </li>
+        <li class="fir-menu">
+          <h4 class="title">菜单四</h4>
+          <ul class="sec-menu">
+            <li>菜单1</li>
+            <li>菜单2</li>
+            <li>菜单3</li>
+            <li>菜单4</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script src="./animate.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

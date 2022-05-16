@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  color: #ffe129;
+  font-weight: bold;
+}
+
+.container {
+  position: relative;
+}
+.container .main {
+  background: url(../img/banner-bg.jpg) no-repeat;
+  height: 546px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .main .lottery {
+  background: url(../img/bg.png) no-repeat;
+  width: 874px;
+  height: 458px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.container .main .lottery li {
+  width: 270px;
+  height: 100px;
+  border: 1px solid #722536;
+  background-color: #622230;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+}
+.container .main .lottery .list-center {
+  width: 100px;
+  height: 200px;
+  flex-direction: column;
+}
+
+.container .main .lottery #start-area {
+  width: 614px;
+  height: 198px;
+  background-color: #430e1b;
+}
+
+.container .main .lottery #start-area button {
+  width: 210px;
+  height: 102px;
+  border: none;
+  background: url(../img/btn.png);
+  cursor: pointer;
+}
+
+.container .main .lottery #start-area span {
+  font-size: 25px;
+}
+
+.container .main .lottery .select {
+  background-color: #ffe129;
+  color: #470c1b;
+}
+
+/* 遮罩层 */
+.container .mask {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.container .mask .tip {
+  width: 400px;
+  height: 164px;
+  margin: 150px auto;
+}
+
+.container .mask .tip .tip-title {
+  background-color: #e99c3d;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.container .mask .tip .tip-title #cha {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.container .mask .tip .tip-content {
+  background-color: #fff;
+  height: 114px;
+  padding-top: 20px;
+}
+
+.container .mask .tip .tip-content p {
+  width: 100%;
+  text-align: center;
+  color: #632331;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container .mask .tip .tip-content button {
+  border: none;
+  background-color: #fca825;
+  color: #fff;
+  margin-top: 25px;
+  margin-left: 285px;
+  width: 90px;
+  height: 28px;
+  font-size: 18px;
+}

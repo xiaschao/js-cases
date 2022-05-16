@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>动态排序表格</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse; /*相邻的边框合并*/
+      }
+
+      th,
+      td {
+        border: 0.5px solid #999;
+        text-align: center;
+        padding: 20px 0;
+      }
+      th {
+        cursor: pointer;
+      }
+      tbody tr:hover {
+        background: #f5f7fa;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox" id="checkAll" /></th>
+          <th>编号</th>
+          <th>姓名</th>
+          <th>年龄</th>
+          <th>职位</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" class="check" /></td>
+          <td>6</td>
+          <td>王磊</td>
+          <td>21</td>
+          <td>交互设计师</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="check" /></td>
+          <td>22</td>
+          <td>莫成辉</td>
+          <td>30</td>
+          <td>测试员</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="check" /></td>
+          <td>3</td>
+          <td>殷献泽</td>
+          <td>24</td>
+          <td>c++程序员</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="check" /></td>
+          <td>17</td>
+          <td>夏策杨</td>
+          <td>28</td>
+          <td>PHP工程师</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="check" /></td>
+          <td>5</td>
+          <td>夏斯超</td>
+          <td>24</td>
+          <td>他们的爸爸</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="./table.js"></script>
+  </body>
+</html>

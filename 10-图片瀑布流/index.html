@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>图片瀑布流</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style-type: none;
+      }
+      .waterfall-flow {
+        width: 90%;
+        margin: 5px auto;
+        border: 1px solid #eee;
+        position: relative;
+      }
+
+      .waterfall-flow .list {
+        position: absolute;
+        font-size: 0;
+        transition: all, 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="waterfall-container">
+      <ul class="waterfall-flow"></ul>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  height: 500px;
+  position: relative;
+}
+.header-menu {
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  width: 100%;
+}
+
+.image-cover {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url('https://puui.qpic.cn/media_img/lena/PICgthm4a_580_1680/0') no-repeat center;
+}
+
+.right-menu {
+  background-color: rgba(15, 15, 30, 0.4);
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  width: 350px;
+  height: 430px;
+  padding: 0 10px 0 10px;
+}
+.right-menu h2 {
+  height: 50px;
+  line-height: 50px;
+  margin-left: 10px;
+}
+.right-menu h2 span {
+  color: #d3dbd7;
+}
+.right-menu hr {
+  border-color: rgba(255, 255, 255, 0.13);
+}
+
+.menu-list li a {
+  display: inline-block;
+  width: 300px;
+  height: 35px;
+  line-height: 35px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 35px;
+}
+
+.menu-list li a {
+  font-size: 0;
+}
+.menu-list li a span {
+  font-size: 16px;
+}
+
+.menu-list li .select {
+  font-size: 16px;
+  color: #ff5c38;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu-list li .select span {
+  font-size: 22px;
+  font-weight: 700;
+}

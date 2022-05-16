@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .container .img-cover {
+        width: 492px;
+        height: 512px;
+        border: 1px solid #eee;
+        position: relative;
+      }
+      .container #small-cover img {
+        width: 100%;
+        height: 100%;
+      }
+      .container .bigImg-cover {
+        overflow: hidden;
+        margin-left: 50px;
+        /* visibility: hidden; */
+      }
+      .container .left .navbar {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .container .left .navbar li {
+        margin-left: 20px;
+        width: 60px;
+        height: 60px;
+      }
+      .container .left .navbar li:first-child {
+        margin-left: 0;
+      }
+      #bkc-cover {
+        position: absolute;
+        background-image: url(./images/bg.png);
+        width: 230px;
+        height: 230px;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      .bigImg-cover img {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="img-cover" id="small-cover">
+          <img src="./images/imgA_2.jpg" alt="" />
+          <div id="bkc-cover"></div>
+        </div>
+        <ul class="navbar">
+          <li>
+            <img src="./images/imgA_1.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./images/imgB_1.jpg" alt="" />
+          </li>
+          <li>
+            <img src="./images/imgC_1.jpg" alt="" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="img-cover bigImg-cover">
+        <img src="./images/imgA_3.jpg" alt="" />
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
