@@ -7,18 +7,13 @@ let cover = document.querySelector('.cover');
 let coverImg = cover.querySelector('img');
 
 function init() {
-  let specialArr = [];
-  for (let i = 0; i <= 90; i += 9) {
-    specialArr.push(i);
-  }
-  // console.log(specialArr);
   for (let i = 0; i < 100; i++) {
     let li = document.createElement('li');
     li.className = 'right-item';
     let span = document.createElement('span');
     span.innerText = i;
     let img = document.createElement('img');
-    if (specialArr.includes(i)) {
+    if (i % 9 === 0) {
       img.src = `./images/values/${specialNum}.png`;
     } else {
       img.src = `./images/values/${getRandom(0, 16)}.png`;
