@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 280px;
+  margin: 100px auto;
+}
+.container .tip {
+  height: 40px;
+  /* border: 1px red solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.container .tip img {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.container .tip span {
+  margin-left: 8px;
+  color: #008c8c;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container .main {
+  border: 2px #ccc solid;
+  padding: 15px 0;
+  border-radius: 20px;
+}
+.container .main h3 {
+  text-align: center;
+}
+.container .main .imgBox {
+  /* background: url(../img/t1.png) no-repeat; */
+  width: 248px;
+  height: 200px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.container .main .imgBox .imgDrag {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 20;
+  display: none;
+}
+.container .main .imgBox .imgGap {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0px 0px 3px #adadad;
+}
+.container .main .slider {
+  width: 248px;
+  height: 30px;
+  margin: 18px auto 10px auto;
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+}
+.container .main .slider span {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 30px;
+  transition: opacity 0.5s;
+}
+.container .main .slider #btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  background: url(../img/yz.png) no-repeat;
+  left: -2px;
+  top: -5px;
+  background-color: #fff;
+  background-size: cover;
+  border: none;
+  z-index: 10;
+}
