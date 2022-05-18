@@ -85,7 +85,7 @@ bindEvent();
 function isApproved() {
   let imgDragLeft = imgDrag.getBoundingClientRect().left;
   let imgGapLeft = imgGap.getBoundingClientRect().left;
-  let errorDis = 3;
+  let errorDis = 5;
   // console.log(imgDragLeft, imgGapLeft);
   return imgDragLeft <= imgGapLeft + errorDis && imgDragLeft >= imgGapLeft - errorDis;
 }
